@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        #time{
+            max-width: 500px;
+            margin: 3%;
+        }
+        .bordering{
+            border: 2px solid rgb(180, 154, 4);
+            margin: 2px;
+            padding: 4px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+           <h1 class="d-flex justify-content-center">WE FIT</h1>
+           <div class="row">
+            <div class="col-md-4 d-flex justify-content-center flex-column">
+                <label for="service">Service:</label>
+                <select name="service" id="service" class="p-2">
+                    <option value="any" disabled selected>Any</option>
+                    <option value="nutritionist">Nutritionist</option>
+                    <option value="medical">Medical Checkup</option>
+                    <option value="sport-massage">Sport Massage</option>
+                </select>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center flex-column">
+        <label for="doctor">Doctors:</label>
+        <select name="doctor" id="doctor" class="p-2">
+            <option value="any"disabled selected> Any</option>
+          
+        </select>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center p-2">
+                <button class="btn btn-warning appointment">Get Appointment</button>
+            </div>
+        </div> 
+
+        <div id="time"> 
+            
+        </div>
+        <button class="btn btn-warning confirm">Confirm</button>
+        <table class="border">
+            <tr>
+                <th class="p-4">Service</th>
+                <th class="p-4">Doctor</th>
+                <th class="p-4">Time</th>
+                <th class="p-4">Remove</th>
+            </tr>
+        </table>
+        </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="custom.js"></script>
+</html>
